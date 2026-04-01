@@ -17,3 +17,8 @@ const multipleNumberGcd = (...nums) => {
 console.time("gcd");
 console.log(multipleNumberGcd(12, 20, 120, 48, 40, 72));
 console.timeEnd("gcd");
+
+module.exports = {
+  multipleNumberGcd,
+  gcd,
+};
