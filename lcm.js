@@ -5,8 +5,8 @@ const { gcd } = require("./euclidean.gcd");
  * @param {number} a first number
  * @param {number} b second number
  * @returns {number} the LCM of a and b
- * GCM(a,b) x LCM(a,b) = a x b
- * => LCM(a,b) = a x b / GCM(a,b)
+ * GCD(a,b) x LCM(a,b) = a x b
+ * => LCM(a,b) = a x b / GCD(a,b)
  */
 const lcm = (a, b) => {
   return (a * b) / gcd(a, b);
