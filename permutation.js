@@ -1,7 +1,4 @@
-const factorial = (numb) => {
-  if (numb === 0 || numb === 1) return numb;
-  return factorial(numb - 1) * numb;
-};
+const factorial = require("./factorial");
 
 /**
  * Calculate the number of permutations of n items taken r at a time
@@ -15,5 +12,5 @@ const permutation = (n, r) => {
   return factorial(n) / factorial(n - r);
 };
 console.time("permutation");
-console.log(permutation(6, 4));
+console.log(permutation(4, 3));
 console.timeEnd("permutation");
